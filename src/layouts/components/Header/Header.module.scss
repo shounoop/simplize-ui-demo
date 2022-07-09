@@ -1,0 +1,96 @@
+.wrapper {
+  height: 64px;
+}
+
+.inner {
+  height: 100%;
+  width: 1280px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.logo {
+  width: 89px;
+  height: 19px;
+  cursor: pointer;
+  min-width: 28px !important;
+  margin-left: 20px;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.nav {
+  padding-left: 70px;
+  flex: 1;
+
+  a {
+    color: #fff;
+    padding: 17px 16px 13px;
+    font-size: 1.6rem;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 16px;
+  }
+
+  a.active {
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 100%;
+      height: 4px;
+      left: 0;
+      bottom: 0;
+      display: block;
+      position: absolute;
+      background: linear-gradient(90deg, #2d88ff 0%, #ab4ae7 50%, #d14ae7 100%);
+      border-radius: 4px;
+      animation: growUp ease 0.5s;
+    }
+  }
+}
+
+.actions {
+  button {
+    color: #fff;
+    padding: 9px 23px;
+    font-size: 1.6rem;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 19px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  button.sign-in {
+    background-color: transparent;
+
+    &:hover {
+      background-color: rgba(218, 224, 231, 0.09);
+    }
+  }
+
+  button.sign-up {
+    background-color: #2d88ff;
+  }
+}
+
+@keyframes growUp {
+  from {
+      width: 0%;
+  }
+  to {
+      width: 100%;
+  }
+}

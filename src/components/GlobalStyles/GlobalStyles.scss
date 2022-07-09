@@ -1,0 +1,47 @@
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary: #fe2c55;
+  --black: #000;
+  --white: #fff;
+  --text-color: #161823;
+
+  --font-family: "ProximaNova", sans-serif;
+
+  // Default layout
+  --default-layout-header-height: 60px;
+  --default-layout-width: 1150px;
+  --default-layout-horizontal-spacer: 24px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  // overflow-x: hidden;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  background-color: #000;
+  color: #fff;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}

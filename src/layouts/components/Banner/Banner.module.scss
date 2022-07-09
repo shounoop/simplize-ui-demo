@@ -1,0 +1,76 @@
+.wrapper {
+}
+
+.content {
+  display: flex;
+  width: 1280px;
+  min-height: 630px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.brief {
+  display: flex;
+  margin: auto;
+}
+
+.brief-content {
+  width: 464px;
+  height: 344px;
+
+  h2 {
+    font-family: "Work Sans";
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+  }
+
+  h1 {
+    width: 170px;
+    font-family: "Work Sans";
+    font-weight: 500;
+    font-size: 8rem;
+    line-height: 94px;
+    background: linear-gradient(
+      108.03deg,
+      #2d88ff 0%,
+      #ab4ae7 51.04%,
+      #d14ae7 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    padding-top: 15px;
+  }
+
+  button {
+    margin-top: 24px;
+    color: #fff;
+    padding: 11px 37px;
+    font-size: 1.8rem;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 21px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #2d88ff;
+  }
+}
+
+.image {
+  display: flex;
+  margin: auto;
+
+  img {
+  }
+}
