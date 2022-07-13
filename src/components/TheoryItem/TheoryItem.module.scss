@@ -1,0 +1,23 @@
+.wrapper + .wrapper {
+  margin-top: 28px;
+}
+
+.lesson-title {
+  font-family: "Work Sans";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.lesson-content {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 29px;
+}
+
+p.bold {
+  font-weight: 700;
+}

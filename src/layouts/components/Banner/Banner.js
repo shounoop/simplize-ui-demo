@@ -1,23 +1,26 @@
 import classNames from "classnames/bind";
 import styles from './Banner.module.scss'
-import { blogImg } from '../../../assets/images'
 
 const cx = classNames.bind(styles)
 
-function Banner() {
+function Banner({ title, intros, small, imgSrc }) {
   return (
     <div className={cx('wrapper')}>
       <div className={cx('content')}>
         <div className={cx('brief')}>
           <div className={cx('brief-content')}>
-            <h2>Blog</h2>
-            <h1>Blog</h1>
-            <p>Simplize giúp bạn loại bỏ cảm xúc khi mua bán, xây dựng chiến lược đầu tư và phân tích mọi cổ phiếu.</p>
-            <button>Bắt đầu ngay</button>
+            {title === "Blog" ? <h2>Blog</h2> : null}
+            <h1 className={cx('title')}>{title}</h1>
+            <div className={cx('intros', { small })}>
+              {intros.map((intro, index) => {
+                return <p className={cx('intro')} key={index}>{intro}</p>
+              })}
+            </div>
+            {title === "Blog" ? <button>Bắt đầu ngay</button> : null}
           </div>
         </div>
         <div className={cx('image')}>
-          <img src={blogImg} alt='blog'></img>
+          <img src={imgSrc} alt='blog'></img>
         </div>
       </div>
     </div>

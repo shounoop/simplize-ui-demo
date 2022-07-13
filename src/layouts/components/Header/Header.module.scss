@@ -41,6 +41,10 @@
     font-family: Roboto;
     font-weight: 500;
     line-height: 16px;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   a.active {
@@ -83,6 +87,10 @@
 
   button.sign-up {
     background-color: #2d88ff;
+    
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 

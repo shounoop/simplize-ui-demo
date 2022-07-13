@@ -13,9 +13,9 @@ function Header() {
     <header className={cx('wrapper')}>
       <div className={cx('inner')}>
         <div className={cx('content')}>
-          <div className={cx('logo')}>
+          <Link className={cx('logo')} to="/" onClick={() => setActive('/')}>
             <img src='https://simplize.vn/static/media/logosimwhite2.242547.png' alt="icon"></img>
-          </div>
+          </Link>
           <nav className={cx('nav')}>
             <Link className={(active === '/') ? cx('active') : ""} to="/" onClick={() => setActive('/')}>Trang chủ</Link>
             <Link className={(active === '/blog') ? cx('active') : ""} to="/blog" onClick={() => setActive('/blog')}>Blog</Link>

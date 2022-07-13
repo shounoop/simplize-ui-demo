@@ -1,17 +1,13 @@
 .wrapper {
+  margin: 80px 200px 75px;
 }
 
 .content {
   display: flex;
-  width: 1280px;
-  min-height: 630px;
-  padding-left: 24px;
-  padding-right: 24px;
+  justify-content: space-between;
 }
 
 .brief {
-  display: flex;
-  margin: auto;
 }
 
 .brief-content {
@@ -25,8 +21,7 @@
     line-height: 59px;
   }
 
-  h1 {
-    width: 170px;
+  .title {
     font-family: "Work Sans";
     font-weight: 500;
     font-size: 8rem;
@@ -44,13 +39,30 @@
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   }
 
-  p {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
-    padding-top: 15px;
+  .intros {
+    margin-top: 15px;
+
+    .intro {
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: justify;
+    }
+
+    .intro + .intro {
+      margin-top: 16px;
+    }
+  }
+
+  .intros.small {
+    margin-top: 16px;
+    width: 500px;
+
+    .intro {
+      font-size: 21px;
+      line-height: 25px;
+    }
   }
 
   button {
@@ -64,13 +76,9 @@
     border-radius: 10px;
     cursor: pointer;
     background-color: #2d88ff;
-  }
-}
 
-.image {
-  display: flex;
-  margin: auto;
-
-  img {
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }

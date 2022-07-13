@@ -1,0 +1,94 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 96px 0;
+}
+
+.wrapper.grey {
+  background: #242526;
+}
+
+.container {
+  width: 764px;
+}
+
+.main-title {
+  font-family: "Work Sans";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: left;
+}
+
+.intros {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.intro {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+
+  + .intro {
+    margin-top: 16px;
+  }
+}
+
+.feature {
+  background: #242526;
+  border-radius: 20px;
+  padding: 32px 32px 44px;
+  margin-bottom: 32px;
+}
+
+.title {
+  h1 {
+    font-family: "Work Sans";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+}
+
+.contents {
+  margin-top: 16px;
+}
+
+.content {
+  + .content {
+    margin-top: 16px;
+  }
+}
+
+.gist {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.sub-content {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  color: #2d88ff;
+  margin-top: 16px;
+  cursor: pointer;
+
+  &::before {
+    content: " • ";
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+.conclusion {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+}

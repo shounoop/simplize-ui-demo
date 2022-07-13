@@ -1,0 +1,36 @@
+.wrapper {
+  display: inline-block;
+  border-radius: 20px;
+  padding: 1px;
+
+  + .wrapper {
+    margin-left: 16px;
+  }
+}
+
+.inner {
+  cursor: pointer;
+  width: 174px;
+  height: 66px;
+  background: #242526;
+  border-radius: 20px;
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #a7aaaf;
+
+  &:hover {
+    background: #3A3B3C;
+  }
+}
+
+.outline {
+  background: linear-gradient(
+    108.03deg,
+    #2d88ff 0%,
+    #ab4ae7 51.04%,
+    #d14ae7 100%
+  );
+}
