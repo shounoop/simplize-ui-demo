@@ -1,5 +1,4 @@
 import { useState } from 'react'
-
 import { Link } from 'react-router-dom'
 import classNames from 'classnames/bind'
 import styles from './Header.module.scss'
@@ -22,7 +21,9 @@ function Header() {
             <Link className={(active === '/knowledge') ? cx('active') : ""} to="/knowledge" onClick={() => setActive('/knowledge')}>Kiến thức</Link>
             <Link className={(active === '/hello') ? cx('active') : ""} to="/hello" onClick={() => setActive('/hello')}>Xin chào</Link>
             <Link className={(active === '/blog-detail') ? cx('active') : ""} to="/blog-detail" onClick={() => setActive('/blog-detail')}>Chi tiết</Link>
+            <Link className={(active === '/news') ? cx('active') : ""} to="/news" onClick={() => setActive('/news')}>News</Link>
           </nav>
+          
           <div className={cx('actions')}>
             <button className={cx('sign-in')}>Đăng nhập</button>
             <button className={cx('sign-up')}>Đăng ký</button>

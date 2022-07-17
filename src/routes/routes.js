@@ -10,6 +10,7 @@ import Blog from '../pages/Blog';
 import Knowledge from '../pages/Knowledge';
 import Hello from '../pages/Hello';
 import BlogDetail from '../pages/BlogDetail';
+import News from '../pages/News/News';
 
 // Public routes
 const publicRoutes = [
@@ -18,6 +19,7 @@ const publicRoutes = [
   { path: config.routes.knowledge, component: Knowledge },
   { path: config.routes.hello, component: Hello },
   { path: config.routes.blogDetail, component: BlogDetail},
+  { path: config.routes.news, component: News},
 ]
 
 const privateRoutes = [

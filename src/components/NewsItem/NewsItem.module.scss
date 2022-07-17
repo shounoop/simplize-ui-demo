@@ -1,0 +1,83 @@
+.wrapper {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+  + .wrapper {
+    margin-top: 22px;
+  }
+}
+
+.container {
+  width: 736px;
+  background: #242526;
+  border-radius: 10px;
+  padding: 32px;
+  display: flex;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.main {
+  width: 448px;
+  margin-right: 32px;
+}
+
+.title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.description {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.footer {
+  display: flex;
+}
+
+.newspaper-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.dot-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.time {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: justify;
+  color: #a7aaaf;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+}
