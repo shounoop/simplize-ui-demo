@@ -58,6 +58,7 @@ function News() {
 
   const handleCancel = () => {
     setIsModalVisible(false);
+    setCurrentNews(null);
   };
 
   const fetMoreData = () => {

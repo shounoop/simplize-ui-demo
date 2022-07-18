@@ -19,6 +19,8 @@ function NewsModal({ isModalVisible, onCancel, newsItem }) {
       width={944}
       footer={null}
       onCancel={onCancel}
+      centered={true}
+      style={{margin: 32  }}
     >
       <div className={cx('container')}>
         <div className={cx('publication')}>
